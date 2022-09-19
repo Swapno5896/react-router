@@ -11,6 +11,7 @@ import Menu from './components/Menu';
 import PostDetail from './components/PostDetail/PostDetail';
 import Posts from './components/Posts/Posts';
 import Post from './components/Posts/Posts';
+import Resturent from './components/Resturent/Resturent';
 import Blogs from './Pages/Blogs';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
@@ -30,6 +31,7 @@ const App = () => {
           <Route path=':postId' element={<PostDetail></PostDetail>}></Route>
         </Route>
         <Route path='/login' element={<Login />} />
+        <Route path='/r' element={<Resturent />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
