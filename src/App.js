@@ -8,6 +8,9 @@ import {
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Friends from './components/Friends/Friends';
 import Menu from './components/Menu';
+import PostDetail from './components/PostDetail/PostDetail';
+import Posts from './components/Posts/Posts';
+import Post from './components/Posts/Posts';
 import Blogs from './Pages/Blogs';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
@@ -23,6 +26,9 @@ const App = () => {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/friends' element={<Friends />} />
         <Route path='/friend/:friendId' element={<FriendDetail />} />
+        <Route path='/posts' element={<Posts/>} >
+          <Route path=':postId' element={<PostDetail></PostDetail>}></Route>
+        </Route>
         <Route path='/login' element={<Login />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
